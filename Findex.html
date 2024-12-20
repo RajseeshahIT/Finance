@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="Findex.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <!-- 1 -->
+            <li class="active">
+                <a href="#">
+                    <i class="tach fa-solid fa-gauge-high"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <!-- 2 -->
+            <li>
+                <a href="#">
+                    <i class="use fa-solid fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <!-- 3 -->
+            <li>
+                <a href="#">
+                    <i class="chart fa-solid fa-chart-simple"></i>
+                    <span>Statistics</span>
+                </a>
+            </li>
+            <!-- 4 -->
+            <li>
+                <a href="#">
+                    <i class="brief fa-solid fa-briefcase"></i>
+                    <span>Careers</span>
+                </a>
+            </li>
+            <!-- 5 -->
+            <li>
+                <a href="#">
+                    <i class="que fa-solid fa-circle-question"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <!-- 6 -->
+            <li>
+                <a href="#">
+                    <i class="star fa-solid fa-star"></i>
+                    <span>Testimonials</span>
+                </a>
+            </li>
+            <!-- 7 -->
+            <li>
+                <a href="#">
+                    <i class="setting fa-solid fa-gear"></i>
+                    <span>settings</span>
+                </a>
+            </li>
+            <!-- 8 -->
+            <li>
+                <a href="#">
+                    <i class="log-out fa-solid fa-right-from-bracket"></i>
+                    <span>Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user-info">
+                <div class="search-box">
+                    <i class="search fa-solid fa-magnifying-glass"></i>
+                    <input type="text" 
+                    placeholder="Search">
+                </div>
+                <img src="./FImages/user.png" alt="">
+            </div>
+        </div>
+        <div class="card-container">
+            <h3 class="main-title">Today's data</h3>
+            <div class="card-wrapper">
+                <div class="payment-card light-red">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">
+                                Payment amount
+                            </span>
+                            <span class="amount-value">
+                                $500.00
+                            </span>
+                        </div>
+                        <i class="dollar fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <span class="card-detail">
+                        ***** **** **** 3484
+                    </span>
+                </div>
+                <!-- 2 -->
+                <div class="payment-card light-purple">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">
+                                Payment order
+                            </span>
+                            <span class="amount-value">
+                                $200.00
+                            </span>
+                        </div>
+                        <i class="line  fa-solid fa-list dark-purple"></i>
+                    </div>
+                    <span class="card-detail">*****
+                        **** **** 5542
+                    </span>
+                </div>
+                <!-- 3 -->
+                <div class="payment-card light-green">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">
+                                Payment customer
+                            </span>
+                            <span class="amount-value">
+                                $350.00
+                            </span>
+                        </div>
+                        <i class="user fa-solid fa-users dark-green"></i>
+                    </div>
+                    <span class="card-detail">*****
+                        **** **** 8896
+                    </span>
+                </div>
+                <!-- 4 -->
+                <div class="payment-card light-blue">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">
+                                Payment proceed
+                            </span>
+                            <span class="amount-value">
+                                $150.00
+                            </span>
+                        </div>
+                        <i class="check fa-solid fa-check dark-blue"></i>
+                    </div>
+                    <span class="card-detail">*****
+                        **** **** 7745
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fi-wrapper">
+            <h3 class="main-title">
+                Finance Data
+            </h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Transaction</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>2023-05-01</td>
+                                <td>Expenses</td>
+                                <td>Office Supplies</td>
+                                <td>$250</td>
+                                <td>Office Expenses</td>
+                                <td>Pending</td>
+                                <td><button>Edit</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>2023-05-02</td>
+                                <td>Income</td>
+                                <td>Client Payment</td>
+                                <td>$500</td>
+                                <td>Sales</td>
+                                <td>Completed</td>
+                                <td><button>Edit</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>2023-05-03</td>
+                                <td>Expense</td>
+                                <td>Travel Expenses</td>
+                                <td>$250</td>
+                                <td>Travel</td>
+                                <td>Pending</td>
+                                <td><button>Edit</button></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="7 dark-purple" >Total: $ 1,000</td>
+                            </tr>
+                        </tfoot>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
